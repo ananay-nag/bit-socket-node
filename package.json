@@ -1,0 +1,80 @@
+{
+  "name": "@ananay-nag/bit-socket-node",
+  "version": "1.0.0",
+  "description": "Schema-driven binary WebSocket framework for Node.js and browsers",
+  "main": "index.js",
+  "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./index.js",
+      "default": "./index.js"
+    },
+    "./server": {
+      "types": "./types/server.d.ts",
+      "import": "./dist/bitsocket-server.esm.js",
+      "require": "./dist/bitsocket-server.cjs",
+      "default": "./dist/bitsocket-server.esm.js"
+    },
+    "./client": {
+      "types": "./types/client.d.ts",
+      "import": "./dist/bitsocket-client.esm.js",
+      "default": "./dist/bitsocket-client.esm.js"
+    },
+    "./dist/bitsocket-client.esm.js": {
+      "types": "./types/client.d.ts",
+      "import": "./dist/bitsocket-client.esm.js",
+      "default": "./dist/bitsocket-client.esm.js"
+    },
+    "./dist/bitsocket-server.esm.js": {
+      "types": "./types/server.d.ts",
+      "import": "./dist/bitsocket-server.esm.js",
+      "default": "./dist/bitsocket-server.esm.js"
+    },
+    "./dist/bitsocket-server.cjs": {
+      "types": "./types/server.d.ts",
+      "require": "./dist/bitsocket-server.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "types",
+    "index.js",
+    "LICENSE",
+    "README.md",
+    "VERSION_V1_0_0.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "pack": "npm pack",
+    "publish": "npm publish --access public"
+  },
+  "keywords": [
+    "websocket",
+    "binary",
+    "realtime",
+    "schema",
+    "socket",
+    "web",
+    "binary-socket"
+  ],
+  "author": "ANANYA NAG",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@msgpack/msgpack": "^3.1.3",
+    "fflate": "^0.8.3",
+    "ws": "^8.21.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@rollup/plugin-commonjs": "^29.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "eslint": "^10.5.0",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.4",
+    "rollup": "^4.62.0"
+  }
+}
