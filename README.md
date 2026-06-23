@@ -26,7 +26,7 @@ By defining Schemas on your server, BitSocket maps your JavaScript objects direc
 ## 🛠️ Installation
 
 ```bash
-npm install bit-socket
+npm install @ananay-nag/bit-socket-node
 ```
 
 ---
@@ -37,7 +37,7 @@ npm install bit-socket
 Define your schemas, attach them to a namespace, and start listening!
 
 ```javascript
-import { BitSocketServer, Schema } from 'bit-socket';
+import { BitSocketServer, Schema } from '@ananay-nag/bit-socket-node';
 
 const io = new BitSocketServer({ port: 5005 });
 
@@ -80,7 +80,7 @@ io.of('/user').on('connection', (socket) => {
 The client only needs to connect. **It automatically downloads the schemas during the connection handshake!**
 
 ```javascript
-import { BitSocketClient } from 'bit-socket';
+import { BitSocketClient } from '@ananay-nag/bit-socket-node';
 
 // Connect the root multiplexer
 const root = new BitSocketClient('ws://localhost:5005');
