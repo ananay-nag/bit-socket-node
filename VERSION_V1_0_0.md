@@ -1,5 +1,5 @@
-VERSION_V1_0_0.md# BitSocket Node.js Library Version & Features
-
+# BitSocket (@ananay-nag/bit-socket-node) 
+## Node.js Library Version & Features
 ## Version Information
 - **Current Version**: `1.0.0`
 - **Modules Exported**: ES Modules (esm) & CommonJS (cjs)
@@ -32,15 +32,17 @@ The library provides manual test scripts and examples inside the repository:
 ### 1. Run the Manual Server Example
 To run the server example that binds to port `5000` with secured gateway, middleware, and schema-synced frames:
 ```bash
+git clone https://github.com/ananay-nag/bit-socket-node.git
 cd bit-socket-node
-node test/manual/app.js
+node examples/advanced/server/index.js
 ```
 
 ### 2. Run the Manual Client Example
 To run the manual client that connects to the server and prints received schema-synced messages:
 ```bash
+https://github.com/ananay-nag/bit-socket-node.git
 cd bit-socket-node
-node test/manual/client-app.js
+node examples/advanced/client/index.js
 ```
 
 ### 3. Run the Test Suite
