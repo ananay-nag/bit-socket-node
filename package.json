@@ -1,5 +1,5 @@
 {
-  "name": "bit-socket",
+  "name": "@ananay-nag/bit-socket-node",
   "version": "1.0.0",
   "description": "Schema-driven binary WebSocket framework for Node.js and browsers",
   "main": "index.js",
@@ -41,7 +41,8 @@
     "types",
     "index.js",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "VERSION_V1_0_0.md"
   ],
   "scripts": {
     "test": "node --test test/*.test.js",
@@ -52,9 +53,11 @@
     "binary",
     "realtime",
     "schema",
-    "socket"
+    "socket",
+    "web",
+    "binary-socket"
   ],
-  "author": "",
+  "author": "ANANYA NAG",
   "license": "ISC",
   "type": "module",
   "dependencies": {

@@ -1,4 +1,4 @@
-# BitSocket Node.js Library Version & Features
+VERSION_V1_0_0.md# BitSocket Node.js Library Version & Features
 
 ## Version Information
 - **Current Version**: `1.0.0`
