@@ -46,7 +46,10 @@
   ],
   "scripts": {
     "test": "node --test test/*.test.js",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "pack": "npm pack",
+    "publish": "npm publish --access public"
   },
   "keywords": [
     "websocket",

@@ -43,7 +43,7 @@ function computeSize(type, val, stringQueue, encoder) {
   } else if (typeof type === 'object' && type !== null) {
     let size = 0;
     const obj = (val !== null && typeof val === 'object') ? val : {};
-    const keys = Object.keys(type);
+    const keys = Object.keys(type).sort();
     for (const key of keys) {
       size += computeSize(type[key], obj[key], stringQueue, encoder);
     }
