@@ -169,4 +169,5 @@ Because network latency (I/O) is the slowest bottleneck in any real-time system,
 For detailed features and run methods of each release, please refer to the VERSION file.
 
 - [**v1.0.0**](./VERSION_V1_0_0.md) (2026-06-23) - Initial stable release containing core BitSocket schema engine, namespace multiplexing, room broadcasting, and handshake middleware.
+- [**v1.0.1**](./VERSION_V1_0_1.md) (2026-06-23) - Initial stable release containing core BitSocket schema engine, namespace multiplexing, room broadcasting, and handshake middleware.
 
