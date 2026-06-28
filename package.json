@@ -1,6 +1,6 @@
 {
   "name": "@ananay-nag/bit-socket-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Schema-driven binary WebSocket framework for Node.js and browsers",
   "main": "index.js",
   "types": "types/index.d.ts",
@@ -42,7 +42,7 @@
     "index.js",
     "LICENSE",
     "README.md",
-    "VERSION_V1_0_0.md"
+    "VERSION_V1_0_1.md"
   ],
   "scripts": {
     "test": "node --test test/*.test.js",
